@@ -1,0 +1,399 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>그린프렌즈</title>
+		
+		<!-- Favicon -->
+        <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/09fb84a732.js" crossorigin="anonymous"></script>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/icofont.css') }}">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.min.css') }}">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl-carousel.css') }}">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/datepicker.css') }}">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/slider.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+		
+    </head>
+    <body>
+	
+		<!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+
+                <div class="indicator"> 
+                    <svg width="16px" height="12px">
+                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+		
+		<!-- Get Pro Button -->
+		<ul class="pro-features">
+			<a class="get-pro" href="#">Get Info</a>
+			<li class="big-title">식물에 관한 사이트입니다</li>
+			<li class="title">지은이:황우진과 황주희가 만들었다</li>
+			<li>초중고성인 누구나 사용가능하다</li>
+			<li>우리페이지에 오신걸 환영한다</li>
+			
+		</ul>
+	
+		<!-- Header Area -->
+		<header class="header" >
+			<!-- Topbar -->
+			<div class="topbar">
+				<div class="container">
+					<div class="row">
+						
+						<div class="col-lg-6 col-md-7 col-12" style="margin-left: auto;">
+							<!-- Top Contact -->
+							<ul class="top-contact">
+								<li><i class="fa fa-phone"></i>+880 1234 56789</li>
+								<li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">support@yourmail.com</a></li>
+							</ul>
+							<!-- End Top Contact -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Topbar -->
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-12">
+								<!-- Start Logo -->
+								<div class="logo">
+									<a href="/"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="#"></a>
+								</div>
+								<!-- End Logo -->
+								<!-- Mobile Nav -->
+								<div class="mobile-nav"></div>
+								<!-- End Mobile Nav -->
+							</div>
+							<div class="main-menu">
+								<nav class="navigation">
+									<ul class="nav menu">
+										<li><a href="/">홈</a></li>
+										<li><a href="/grap">실시간 온도.습도 측정</a></li>
+										<li><a href="/camera">실시간 카메라 확인</a></li>
+										<li><a href="https://smartform.pages.dev">AI 채팅 바로가기</a></li>
+									</ul>
+								</nav>
+							</div>
+								<!--/ End Main Menu -->
+							</div>
+						
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!-- End Header Area -->
+		
+		<!-- Slider Area -->
+		<!--2024-10-23 slider 배경 코드를 css로 따로 분리 (css 이름: slider.css // .background-slider2)-->
+		<section class="slider">
+			<div class="hero-slider">
+				<!-- Start Single Slider -->
+				<div class="single-slider background-slider2">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h1>우리의<span>GreenFriend</span> Services<span>Trust!</span></h1>
+									<p>우리는 너의시간을 줄여줄것이다. </p>
+									<div class="button">
+										<a href="/grap" class="btn">실시간 온도.습도 측정</a>
+										<a href="/camera" class="btn primary">실시간 카메라 확인</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Single Slider -->
+				<!-- Start Single Slider -->
+				 <!--2024-10-23 slider 배경 코드를 css로 따로 분리 (css 이름: slider.css // .background-slider)-->
+				<div class="single-slider background-slider" style="background-image: url(/static/img/garda.jpg);">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h1><span>GreenFriend</span> Services <span>Trust!</span></h1>
+									<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p> -->
+									<div class="button">
+										<a href="/grap" class="btn">실시간 온도.습도 측정</a>
+										<a href="/camera" class="btn primary">실시간 카메라 확인</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Start End Slider -->
+				<!-- Start Single Slider -->
+				 <!--2024-10-23 slider 배경 코드를 css로 따로 분리 (css 이름: slider.css // .background-slider3)-->
+				<div class="single-slider background-slider3">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h1><span>GreenFriend</span> Services <span>Trust!</span></h1>
+									<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p> -->
+									<div class="button">
+										<a href="/grap" class="btn">실시간 온도.습도 측정</a>
+										<a href="/camera" class="btn primary">실시간 카메라 확인</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Single Slider -->
+			</div>
+		</section>
+		<!--/ End Slider Area -->
+		
+		<!-- Start Schedule Area -->
+		<section class="schedule">
+			<div class="container">
+				<div class="schedule-inner">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-12 ">
+							<!-- single-schedule -->
+							<div class="single-schedule first">
+								<div class="inner">
+									<div class="icon">
+										<i class="fa-sharp fa-light fa-leaf"></i>
+									</div>
+									<div class="single-content">									
+										<h4>실시간 온도.습도 측정</h4>
+										<p>실시간으로 아두이노 UNO 보드를 통하여 온도와 습도를 DHT22 &nbsp;센서를 통해 측정한다.</p>
+										<br>
+										<a href="/grap">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- single-schedule -->
+							<div class="single-schedule middle">
+								<div class="inner">
+									<div class="icon">
+										<i class="fa-sharp fa-thin fa-leaf-oak"></i>
+									</div>
+									<div class="single-content">
+										<!-- <span>Fusce Porttitor</span> -->
+										<h4>실시간 카메라 확인</h4>
+										<p>실시간으로 식물을 찍고 있는 카메라 영상을 네트워크를 통해 가져와 웹으로 서비스를 제공한다.</p>
+										<a href="/camera">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/End Start schedule Area -->
+
+		<!-- Start Feautes -->
+		<section class="Feautes section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>We Are Always Ready to Help You</h2>
+							<img src="{{ url_for('static', filename='img/section-img.png') }}" alt="#">
+							
+						</div>
+					</div>
+				</div>
+				
+		
+		
+		
+					</div>
+					<div class="col-lg-6 col-12">
+						<!-- Start Choose Rights -->
+						<div class="choose-right">
+							<div class="video-image">
+								<!-- Video Animation -->
+								<div class="promo-video">
+									<div class="waves-block">
+										<div class="waves wave-1"></div>
+										<div class="waves wave-2"></div>
+										<div class="waves wave-3"></div>
+									</div>
+								</div>
+								<!--/ End Video Animation -->
+								<a href="https://www.youtube.com/watch?v=RFVXy6CRVR4" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
+							</div>
+						</div>
+						<!-- End Choose Rights -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Why choose -->
+	
+		<!-- Footer Area -->
+		<footer id="footer" class="footer ">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>About Us</h2>
+								<p>실시간으로 카메라를 통해 식물 상태를 확인하고 온도와 습도 센서를 통하여 현재 온도와 습도를 확인할 수 있습니다.</p>
+								<!-- Social -->
+								<ul class="social">
+									<li><a href="#"><i class="icofont-facebook"></i></a></li>
+									<li><a href="#"><i class="icofont-google-plus"></i></a></li>
+									<li><a href="#"><i class="icofont-twitter"></i></a></li>
+									<li><a href="#"><i class="icofont-vimeo"></i></a></li>
+									<li><a href="#"><i class="icofont-pinterest"></i></a></li>
+								</ul>
+								<!-- End Social -->
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer f-link">
+								<h2>Quick Links</h2>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="/"><i class="fa fa-caret-right" aria-hidden="true"></i>홈페이지</a></li>
+											<li><a href="/grap"><i class="fa fa-caret-right" aria-hidden="true"></i>온도습도 확인</a></li>
+											<li><a href="/camera"><i class="fa fa-caret-right" aria-hidden="true"></i>카메라 확인</a></li>
+										</ul>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Open Hours</h2>
+								<p>현재 이메일 및 전화를 받을 수 있는 시간은 다음과 같습니다: </p>
+								<ul class="time-sidual">
+									<li class="day">Monday - Friday <span>8.00-20.00</span></li>
+									<li class="day">Saturday <span>9.00-18.30</span></li>
+									<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Newsletter</h2>
+								<p>문의 사항 및 건의 사항은 이메일을 통해 연락하여 주십시오</p>
+								<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+									<input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
+										onblur="this.placeholder = 'Your email address'" required="" type="email">
+									<button class="button"><i class="icofont icofont-paper-plane"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© Copyright 2018  |  All Rights Reserved by <a href="https://www.wpthemesgrid.com" target="_blank">wpthemesgrid.com</a> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		<!--/ End Footer Area -->
+		
+
+		
+		<!-- jquery Min JS -->
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<!-- jquery Migrate JS -->
+		<script src="{{ url_for('static', filename='js/jquery-migrate-3.0.0.js') }}"></script>
+		<!-- jquery Ui JS -->
+		<script src="{{ url_for('static', filename='js/jquery-ui.min.js') }}"></script>
+		<!-- Easing JS -->
+        <script src="{{ url_for('static', filename='js/easing.js') }}"></script>
+		<!-- Color JS -->
+		<script src="{{ url_for('static', filename='js/colors.js') }}"></script>
+		<!-- Popper JS -->
+		<script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="{{ url_for('static', filename='js/bootstrap-datepicker.js') }}"></script>
+		<!-- Jquery Nav JS -->
+        <script src="{{ url_for('static', filename='js/jquery.nav.js') }}"></script>
+		<!-- Slicknav JS -->
+		<script src="{{ url_for('static', filename='js/slicknav.min.js') }}"></script>
+		<!-- ScrollUp JS -->
+        <script src="{{ url_for('static', filename='js/jquery.scrollUp.min.js') }}"></script>
+		<!-- Niceselect JS -->
+		<script src="{{ url_for('static', filename='js/niceselect.js') }}"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="{{ url_for('static', filename='js/tilt.jquery.min.js') }}"></script>
+		<!-- Owl Carousel JS -->
+        <script src="{{ url_for('static', filename='js/owl-carousel.js') }}"></script>
+		<!-- counterup JS -->
+		<script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+		<!-- Steller JS -->
+		<script src="{{ url_for('static', filename='js/steller.js') }}"></script>
+		<!-- Wow JS -->
+		<script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+		<!-- Magnific Popup JS -->
+		<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		<!-- Main JS -->
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>

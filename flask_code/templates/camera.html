@@ -1,0 +1,412 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>그린프렌즈 - 실시간 카메라 확인</title>
+		
+		<!-- Favicon -->
+        <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+		
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+		<style>
+			*  {
+				font-family: "Noto Sans KR", "Poppins" ,serif;
+				font-optical-sizing: auto;
+				font-weight: 400;
+				font-style: normal;
+			}
+			.ledBtnArea {
+				margin-top: 10px;
+				margin-bottom: 30px;
+			}
+		</style>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/icofont.css') }}"> 
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.min.css') }}">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl-carousel.css') }}">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/datepicker.css') }}">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+
+		<!--LED 버튼 CSS-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/LEDbuttonStyle.css') }}">		
+    </head>
+    <body>
+	
+		<!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+
+                <div class="indicator"> 
+                    <svg width="16px" height="12px">
+                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+		
+		<!-- Get Pro Button 
+		<ul class="pro-features">
+			<a class="get-pro" href="#">Get Pro</a>
+			<li class="big-title">Pro Version Available on Themeforest</li>
+			<li class="title">Pro Version Features</li>
+			<li>2+ premade home pages</li>
+			<li>20+ html pages</li>
+			<li>Color Plate With 12+ Colors</li>
+			<li>Sticky Header / Sticky Filters</li>
+			<li>Working Contact Form With Google Map</li>
+			<div class="button">
+				<a href="http://preview.themeforest.net/item/mediplus-medical-and-doctor-html-template/full_screen_preview/26665910?_ga=2.145092285.888558928.1591971968-344530658.1588061879" target="_blank" class="btn">Pro Version Demo</a>
+				<a href="https://themeforest.net/item/mediplus-medical-and-doctor-html-template/26665910" target="_blank" class="btn">Buy Pro Version</a>
+			</div>
+		</ul>-->
+
+		<!-- Header Area -->
+		<header class="header" >
+			<!-- Topbar -->
+			<div class="topbar">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-7 col-12" style="margin-left: auto;">
+							<!-- Top Contact -->
+							<ul class="top-contact">
+								<li><i class="fa fa-phone"></i>+880 1234 56789</li>
+								<li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">support@yourmail.com</a></li>
+							</ul>
+							<!-- End Top Contact -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Topbar -->
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-12">
+								<!-- Start Logo -->
+								<div class="logo">
+									<a href="/"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="#"></a>
+								</div>
+								<!-- End Logo -->
+								<!-- Mobile Nav -->
+								<div class="mobile-nav"></div>
+								<!-- End Mobile Nav -->
+							</div>
+							<div class="col-lg-7 col-md-9 col-12">
+								<!-- Main Menu -->
+								<div class="main-menu">
+									<nav class="navigation">
+										<ul class="nav menu">
+											<li><a href="/">홈</a></li>
+											<li><a href="/grap">실시간 온도.습도 측정</a></li>
+											<li class="active"><a href="#">실시간 카메라 확인</a></li>
+											<li><a href="https://smartform.pages.dev">AI 채팅 바로가기</a></li>
+										</ul>
+									</nav>
+								</div>
+								<!--/ End Main Menu -->
+							</div>
+							<div class="col-lg-2 col-12">
+								<!--<div class="get-quote">
+									<a href="appointment.html" class="btn">LogIn</a>
+								</div>-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!-- End Header Area -->
+	
+		<!-- Breadcrumbs -->
+		<div class="breadcrumbs overlay">
+			<div class="container">
+				<div class="bread-inner">
+					<div class="row">
+						<div class="col-12">
+							<h2>실시간 카메라 확인</h2>
+							<ul class="bread-list">
+								<li><a href="/">홈</a></li>
+								<li><i class="icofont-simple-right"></i></li>
+								<li class="active">실시간 카메라 확인</li>
+								<li><a href="https://smartform.pages.dev">AI 채팅 바로가기</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Breadcrumbs -->
+	
+		<!-- Start Portfolio Details Area -->
+		<section class="pf-details section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="inner-content">
+							<div class="image-slider">
+								<!-- 기존의 영상을 띄워주기만 하는 코드
+								<img src="http://192.168.233.149:81/stream" alt="ESP32 Live Stream" width="320" height="480" style="height: 500px;">
+								-->
+								<!-- url_for() 를 이용하여 /video_feed 로 -->
+								<img src="{{ url_for('video_feed') }}" alt="ESP32 Live Stream" width="320" height="480" style="height: 500px;">
+							</div>
+							<div class="date">
+								<ul>
+									<!--<li><span>현재 시각 :</span> </li>-->
+									<li><span>현재 온도 :</span> {{oneTempData}}°C 
+										<span>&nbsp&nbsp&nbsp&nbsp현재 습도 :</span> {{oneHumiData}}%</li>
+									<!--<li><span>현재 습도 :</span> {{oneHumiData}}%</li>-->
+								</ul>
+							</div>
+							
+							<div class="body-text">
+								<h3>현재 상태는 다음과 같습니다:</h3>
+								<br>
+								<div class="status-card-display">
+									<!--<div class="status-card" style="border-top: 4px solid #45BB89;">
+										<div class="status-card-header">성장환경</div>
+										<div class="status-card-main">
+											<i class="fa-brands fa-envira status-card-icon"></i>
+											<p class="status-card-content">쾌적한 환경입니다.</p>
+
+										</div>
+									</div>-->
+									<div class="status-card" style="border-top: 4px solid #3D82AB;">
+										<div class="status-card-header">온도</div>
+										<div class="status-card-main">
+											<i class="fa-solid fa-temperature-low status-card-icon"></i>
+											<p class="status-card-content">{{oneTempData}}°C</p>
+										</div>
+									</div>
+									<div class="status-card" style="border-top: 4px solid #003853;">
+										<div class="status-card-header">습도</div>
+										<div class="status-card-main">
+											<i class="fa-solid fa-droplet status-card-icon"></i>
+											<p class="status-card-content">{{oneHumiData}}%</p>
+										</div>
+									</div>
+									<button class="status-card-button" id="controlButton" style="border-top: 4px solid #F66B0E;">
+										<div class="status-card-header">LED on/off</div>
+										<div class="status-card-main">
+											<i class="fa-regular fa-lightbulb status-card-icon"></i>
+											<p class="status-card-content">ON</p>
+										</div>
+									</button>
+								</div>
+								<div class="share">
+									<h4>Share Now -</h4>
+									<ul>
+										<li><a href="#"><i class="icofont-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="icofont-google-plus" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="icofont-twitter" aria-hidden="true"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Portfolio Details Area -->
+		
+		<!-- Footer Area -->
+		<footer id="footer" class="footer ">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>About Us</h2>
+								<p>실시간으로 카메라를 통해 식물 상태를 확인하고 온도와 습도 센서를 통하여 현재 온도와 습도를 확인할 수 있습니다.</p>
+								<!-- Social -->
+								<ul class="social">
+									<li><a href="#"><i class="icofont-facebook"></i></a></li>
+									<li><a href="#"><i class="icofont-google-plus"></i></a></li>
+									<li><a href="#"><i class="icofont-twitter"></i></a></li>
+									<li><a href="#"><i class="icofont-vimeo"></i></a></li>
+									<li><a href="#"><i class="icofont-pinterest"></i></a></li>
+								</ul>
+								<!-- End Social -->
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer f-link">
+								<h2>Quick Links</h2>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="/"><i class="fa fa-caret-right" aria-hidden="true"></i>홈페이지</a></li>
+											<li><a href="/grap"><i class="fa fa-caret-right" aria-hidden="true"></i>온도습도 확인</a></li>
+											<li><a href="/camera"><i class="fa fa-caret-right" aria-hidden="true"></i>카메라 확인</a></li>
+										</ul>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Open Hours</h2>
+								<p>현재 이메일 및 전화를 받을 수 있는 시간은 다음과 같습니다: </p>
+								<ul class="time-sidual">
+									<li class="day">Monday - Friday <span>8.00-20.00</span></li>
+									<li class="day">Saturday <span>9.00-18.30</span></li>
+									<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Newsletter</h2>
+								<p>문의 사항 및 건의 사항은 이메일을 통해 연락하여 주십시오</p>
+								<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+									<input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
+										onblur="this.placeholder = 'Your email address'" required="" type="email">
+									<button class="button"><i class="icofont icofont-paper-plane"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© Copyright 2018  |  All Rights Reserved by <a href="https://www.wpthemesgrid.com" target="_blank">wpthemesgrid.com</a> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		<!--/ End Footer Area -->
+		
+		<!-- jquery Min JS -->
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<!-- jquery Migrate JS -->
+		<script src="{{ url_for('static', filename='js/jquery-migrate-3.0.0.js') }}"></script>
+		<!-- jquery Ui JS -->
+		<script src="{{ url_for('static', filename='js/jquery-ui.min.js') }}"></script>
+		<!-- Easing JS -->
+        <script src="{{ url_for('static', filename='js/easing.js') }}"></script>
+		<!-- Color JS -->
+		<script src="{{ url_for('static', filename='js/colors.js') }}"></script>
+		<!-- Popper JS -->
+		<script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="{{ url_for('static', filename='js/bootstrap-datepicker.js') }}"></script>
+		<!-- Jquery Nav JS -->
+        <script src="{{ url_for('static', filename='js/jquery.nav.js') }}"></script>
+		<!-- Slicknav JS -->
+		<script src="{{ url_for('static', filename='js/slicknav.min.js') }}"></script>
+		<!-- ScrollUp JS -->
+        <script src="{{ url_for('static', filename='js/jquery.scrollUp.min.js') }}"></script>
+		<!-- Niceselect JS -->
+		<script src="{{ url_for('static', filename='js/niceselect.js') }}"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="{{ url_for('static', filename='js/tilt.jquery.min.js') }}"></script>
+		<!-- Owl Carousel JS -->
+        <script src="{{ url_for('static', filename='js/owl-carousel.js') }}"></script>
+		<!-- counterup JS -->
+		<script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+		<!-- Steller JS -->
+		<script src="{{ url_for('static', filename='js/steller.js') }}"></script>
+		<!-- Wow JS -->
+		<script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+		<!-- Magnific Popup JS -->
+		<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!--차트 만들기-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		<!-- Main JS -->
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+		<script>
+			
+			$(document).ready(function() {
+				let ledData = {{ ledData | tojson }};
+
+				// 서버에서 온 상태에 따라 버튼 텍스트 및 클래스 변경
+				if (ledData === 1) {  // LED ON 상태
+					$('#controlButton').find('p').text('ON');
+				} else {  // LED OFF 상태
+					$('#controlButton').find('p').text('OFF');
+				}
+				// LED 버튼 클릭 이벤트 핸들러
+				$('#controlButton').on('click', function() {
+					// 현재 버튼 텍스트에 따라 전송할 LED 상태 결정 (1 = ON, 0 = OFF)
+					let currentStatus =$('#controlButton').find('p').text().trim();
+					let newStatus = currentStatus === 'ON' ? 0 : 1;
+					
+					// 서버에 LED 상태 변경 요청 보내기
+					$.ajax({
+						url: "/update_led_status",  // Flask 서버의 경로
+						type: "POST",
+						data: JSON.stringify({ status: newStatus }),
+						contentType: "application/json",
+						success: function(response) {
+							// 서버에서 온 상태에 따라 버튼 텍스트 및 클래스 변경
+							if (response.status === 1) {  // LED ON 상태
+								$('#controlButton').find('p').text('ON');
+							} else {  // LED OFF 상태
+								$('#controlButton').find('p').text('OFF');
+							}
+						},
+						error: function(error) {
+							console.error("LED 상태 변경에 실패했습니다:", error);
+						}
+					});
+				});
+			});
+		</script>
+		
+
+    </body>
+</html>
