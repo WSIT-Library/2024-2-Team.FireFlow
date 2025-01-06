@@ -1,0 +1,90 @@
+/* Import Font Awesome */
+@import url('https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+
+/* 기본 스타일 설정 */
+* {
+    font-family: "Noto Sans KR", "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 상태 카드 스타일 */
+.status-card-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 50px;
+}
+
+.status-card, .status-card-button {
+    font-family: "Noto Sans KR", sans-serif;
+    color: black;
+    flex: 1 1 20%;
+    border: 1px solid gainsboro;
+    background-color: white;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* LED 버튼 호버 효과 */
+.status-card-button:hover {
+    transform: scale(1.05);
+}
+
+.status-card-button:hover .status-card-icon,
+.status-card-button:hover .status-card-content {
+    color: #F66B0E;
+}
+
+/* Active 상태 스타일 */
+.status-card-button.active .status-card-icon,
+.status-card-button.active .status-card-content {
+    color: #F66B0E;
+}
+
+/* 카드의 텍스트와 컨텐츠 스타일 */
+.status-card-header {
+    color: #231F20;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 20px;
+}
+
+.status-card-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.status-card-main > .status-card-icon {
+    font-size: 36px;
+    color: #231F20;
+    transition: color 0.3s ease;
+}
+
+.status-card-main > .status-card-content {
+    font-family: "Do Hyeon", sans-serif;
+    color: #231F20;
+    font-size: 18px;
+    text-align: center;
+    transition: color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 768px) {
+    .status-card, .status-card-button {
+        flex: 1 1 100%;
+        padding: 16px;
+    }
+}
